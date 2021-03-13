@@ -1,0 +1,11 @@
+<launch>
+	<param name="min" value="1" type="double" />
+	<param name="max" value="5" type="double" />
+	<node pkg="pub_sub" type="publisher" name="pub" output="screen"/>
+	<node pkg="pub_sub" type="distance" name="distance" output="screen"/>
+	<param name="latitude" value="45" type="double" />
+	<param name="longitude" value="9" type="double" />
+	<param name="altitude" value="224" type="double" />
+	<node pkg="pub_sub" type="subscriber" name="car" output="screen"/>
+	<node pkg="pub_sub" type="subscriber" name="obstacle" output="screen"/>
+</launch>

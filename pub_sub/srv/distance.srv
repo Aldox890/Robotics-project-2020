@@ -1,0 +1,8 @@
+float64 carPosX
+float64 carPosY
+float64 carPosZ
+float64 obsPosX
+float64 obsPosY
+float64 obsPosZ
+---
+float64 distance
